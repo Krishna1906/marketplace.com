@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: Cambria;
+}
+
+form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--input-bg);
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+form button {
+  background: var(--primary);
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+form button:hover {
+  background: #a9a9a9;
+  border: 1px solid #b8c3ef;
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE, Edge (old) */
+body {
+  -ms-overflow-style: none;
+}
+
+.w-full {
+  width: 150px;
+  height: 150px;
+}
+
+.product_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home .bg-gray, .home .bg-gray-100  {
+  width: 100%;
+}
+
+.remove{
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.remove:hover {
+  background: darkred;
+}
+
+.productdetails {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productimage{
+  display: flex;
+  justify-content: center ;
+}
+
+.mainimage{
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.placeorder{
+  width: 100%;
+  height: auto;
+}
+
+.productname{
+  height: 50px;
+}
+.homebanner{
+  /* width: 100%; */
+  height: 300px;
+}
+
+.homebanner img {
+  width: 100%;
+  height: 300px;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80%;
+}
+.nav{
+  width: 100%;
+  height: 90px;
+}
+
+.summaryimage{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.orderbutton{
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.orderbutton:hover {
+  background: #d97706;
+}
+
+.editaddress{
+  width:25%;
+}
+
+.nav{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainnav{
+  width: 80%;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories{
+  width: 80%;
+}
+
+.wishlist{
+  margin-top: 0;
+  width: 100%;
+}
+.wishlist_details{
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.justify-center{
+  justify-content: start;
+}

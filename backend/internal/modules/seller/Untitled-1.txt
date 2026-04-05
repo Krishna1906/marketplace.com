@@ -1,0 +1,4 @@
+New-Item internal\modules\admin\handler.go
+New-Item internal\modules\admin\service.go
+New-Item internal\modules\admin\repository.go
+New-Item internal\modules\admin\model.go
